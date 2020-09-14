@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/ThemeOverlay.AppCompat.Dark" android:gravity="bottom" android:orientation="vertical" android:paddingTop="0.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/colorPrimaryDark" android:paddingTop="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="120.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/imageView" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/meme" />
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:text="@string/slogan" android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_holder" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginTop="0.0dip" />
+    </LinearLayout>
+</LinearLayout>

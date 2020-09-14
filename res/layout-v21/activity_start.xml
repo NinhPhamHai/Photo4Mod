@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:orientation="vertical" android:id="@id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/bg_main" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.Toolbar app:titleTextColor="#FFFFFF" android:background="#C1C1C1"  android:id="@id/detail_toolbar"  android:layout_width="fill_parent" android:layout_height="?actionBarSize" ads:popupTheme="@style/ThemeOverlay.AppCompat.Light" ads:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layRl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/detail_toolbar">
+            <TextView android:textSize="18.0sp" android:textColor="@color/gray" android:layout_gravity="center" android:id="@id/textView" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone"/>
+            <ImageView android:id="@id/btn_scan" android:src="@drawable/button_one" android:layout_width="fill_parent" android:layout_height="148dp" />
+            <ImageView android:id="@id/btn_result" android:src="@drawable/button_two" android:layout_width="fill_parent" android:layout_height="148dp" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_rate" android:background="@drawable/layout_bg" android:padding="5.0dip" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp" android:layout_margin="5.0dip">
+                <TextView android:textSize="16.0sp" android:visibility="gone" android:textColor="@color/primary_dark_material_light" android:gravity="center" android:layout_width="0dp" android:layout_height="0dp"  />
+                <RatingBar android:theme="@style/RatingBar"  android:visibility="gone" android:layout_gravity="center" android:id="@id/ratingBar" android:layout_width="0dp" android:layout_height="0dp" android:rating="4.0" android:stepSize="1.0" />
+                <TextView android:textSize="16.0sp"  android:visibility="gone" android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/tv_rating_scale" android:layout_width="0dp" android:layout_height="0dp" android:text="@string/rat_great" />
+                <LinearLayout android:layout_gravity="center"  android:visibility="gone" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="0dp">
+                    <Button android:textSize="13.0sp" android:textColor="@color/primary_dark_material_light" android:id="@id/btn_no_rate" android:background="@drawable/btn_normal_gray" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:text="@string/txt_no_rate" android:layout_weight="1.0" />
+                    <Button android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/btn_yes_rate" android:background="@drawable/btn_normal_green" android:layout_width="100.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="@string/txt_yes_rate" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/tv_thanks" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp" android:layout_marginTop="13.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/img_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" />
+        <!--<LinearLayout android:orientation="vertical" android:id="@id/lay_ad_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerInParent="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/banner_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+          
+        </LinearLayout>-->
+		
+		<ImageView android:id="@id/id_sub" android:layout_width="fill_parent" android:layout_height="232dp" android:src="@drawable/icon_image_sub" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView android:layout_gravity="start" android:id="@id/nav_view" android:fitsSystemWindows="true" android:layout_width="280.0dip" android:layout_height="fill_parent" ads:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

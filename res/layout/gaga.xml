@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/mainLayout" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/toolbar" />
+    <com.b.zgallery.CustomViewPager android:id="@id/pager" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/imagesHorizontalList" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>
